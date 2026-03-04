@@ -9,6 +9,7 @@ defmodule PhoenixApiWeb.PageController do
       %{id: 1, name: "Alice", email: "a@b.com"},
       %{id: 2, name: "Bob", email: "b@b.com"} 
     ]
-    render(conn, :users, users: users)
+    
+    json(conn, users)
   end
 end
