@@ -3,6 +3,7 @@ defmodule PhoenixApi.Repo.Migrations.AddUserIdToPosts do
 
   def change do
    alter table(:posts) do
-      add:user_id, references(:users, on_delete: :nothing)
+      add :user_id, references(:users, on_delete: :nothing)
+  end
   end
 end
